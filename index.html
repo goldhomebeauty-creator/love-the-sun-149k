@@ -622,9 +622,9 @@ src="https://www.facebook.com/tr?id=1389341576259188&ev=PageView&noscript=1"/></
 <!-- ====== GUARANTEE (Bước 13) ====== -->
 <section class="guarantee">
   <div class="container">
-    <div class="gbadge"><div>AN TÂM<br>KIỂM HÀNG<br>MỚI TRẢ TIỀN</div></div>
-    <h2>Chị không phải mạo hiểm một đồng nào</h2>
-    <p>Đơn giao tận nhà theo hình thức COD. Chị nhận hàng, mở ra kiểm tra đúng sản phẩm chính hãng rồi mới thanh toán cho shipper.</p>
+    <div class="gbadge"><div>HÀNG<br>CHÍNH HÃNG<br>ĐỔI TRẢ NẾU LỖI</div></div>
+    <h2>Chị hoàn toàn yên tâm</h2>
+    <p>Chị giữ suất bằng cách chuyển khoản 149.000đ, cước ship trả khi nhận. Bên Giang gọi xác nhận trước khi gửi hàng đi, không để chị chờ vu vơ.</p>
     <p>Hàng chính hãng BA12DAYS, có giấy công bố đầy đủ. Nếu sản phẩm nhận được bị lỗi hoặc không đúng mô tả, chị được đổi trả.</p>
     <img src="https://raw.githubusercontent.com/goldhomebeauty-creator/ba12days-assets/main/love-the-sun-kiem-nghiem.png" alt="Phiếu kết quả thử nghiệm chỉ số chống nắng SPF50+ PA+++ của Love The Sun" style="display:block;margin:24px auto 0;max-width:520px;width:100%;border-radius:12px;box-shadow:0 8px 22px rgba(0,0,0,.15);">
     <p style="max-width:560px;margin:14px auto 0;font-size:15px;color:#7a6a4f;">Đã kiểm nghiệm chỉ số chống nắng SPF50+ PA+++ tại Viện IRDOP. Số tiếp nhận Phiếu công bố 003329/CBMP-HCM (Sở Y Tế TP. Hồ Chí Minh).</p>
@@ -653,7 +653,7 @@ src="https://www.facebook.com/tr?id=1389341576259188&ev=PageView&noscript=1"/></
     </div>
     <div class="faq-item">
       <h3>Đặt hàng rồi bao lâu nhận được, trả tiền thế nào?</h3>
-      <p>Chị để lại tên và số điện thoại, bên Giang gọi xác nhận rồi gửi đi. Chị nhận hàng, kiểm tra xong mới thanh toán cho shipper.</p>
+      <p>Sau khi điền form, chị chuyển khoản 149.000đ qua mã QR để giữ suất. Bên Giang gọi xác nhận rồi gửi hàng, khi nhận chị chỉ trả thêm cước ship cho shipper.</p>
     </div>
   </div>
 </section>
@@ -693,11 +693,11 @@ src="https://www.facebook.com/tr?id=1389341576259188&ev=PageView&noscript=1"/></
         </div>
 
         <div style="background:#FFF8E7;border:1px dashed var(--sun);border-radius:10px;padding:12px 14px;margin-top:10px;font-size:14.5px;color:#7a5a1f;line-height:1.55;">
-          💳 <b>Thông tin thanh toán:</b> Số tiền sản phẩm <b style="color:var(--red);">149.000đ</b>. <b>Cước vận chuyển</b> chị thanh toán cho shipper <b>khi nhận hàng</b> (COD).
+          💳 <b>Thông tin thanh toán:</b> Sau khi điền, chị chuyển khoản <b style="color:var(--red);">149.000đ</b> qua mã QR để giữ suất. <b>Cước ship</b> chị trả cho shipper <b>khi nhận hàng</b>.
         </div>
 
-        <button type="submit" class="cta-button submit-btn" style="margin-top:18px;">GIỮ SUẤT TRẢI NGHIỆM 149K NGAY</button>
-        <p class="pay-note">🔒 Chỉ 149.000đ · cước ship trả khi nhận hàng · Giang gọi xác nhận trước khi gửi</p>
+        <button type="submit" class="cta-button submit-btn" style="margin-top:18px;">GIỮ SUẤT &amp; LẤY MÃ QR THANH TOÁN</button>
+        <p class="pay-note">🔒 Chuyển khoản 149.000đ giữ suất · cước ship trả khi nhận · Giang gọi xác nhận</p>
       </form>
 
       <div class="ok-msg" id="ok-msg">
@@ -839,7 +839,7 @@ document.getElementById('order-form').addEventListener('submit',function(e){
 
   /* khóa nút chống đặt trùng + chuyển sang TRANG CẢM ƠN (Pixel Purchase bắn ở trang cảm ơn) */
   try{ var _b=document.querySelector('.submit-btn'); if(_b){ _b.disabled=true; _b.textContent='ĐANG XỬ LÝ...'; } }catch(e){}
-  setTimeout(function(){ window.location.href='thankyou.html?total='+total+'&eid='+encodeURIComponent(eid); }, 800);
+  setTimeout(function(){ window.location.href='thankyou.html?total='+total+'&eid='+encodeURIComponent(eid)+'&ten='+encodeURIComponent(name)+'&sdt='+encodeURIComponent(phone)+'&dc='+encodeURIComponent(address); }, 800);
 });
 
 /* ===== POPUP FOMO (tên mẫu, xoay vòng) ===== */

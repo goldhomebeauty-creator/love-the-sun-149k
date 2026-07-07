@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cảm ơn chị đã giữ suất trải nghiệm Love The Sun 💛</title>
+<title>Hóa đơn & thanh toán suất trải nghiệm Love The Sun 💛</title>
 <meta name="robots" content="noindex">
 
 <!-- ====== FACEBOOK PIXEL (vikora 1389341576259188) ====== -->
@@ -38,62 +38,114 @@ src="https://www.facebook.com/tr?id=1389341576259188&ev=Purchase&noscript=1"/></
     min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px 16px;line-height:1.6;}
   h1,h2,h3{text-wrap:balance;line-height:1.2;}
   p{text-wrap:pretty;}
-  .card{background:#fff;border-radius:20px;max-width:560px;width:100%;padding:40px 28px;
+  .card{background:#fff;border-radius:20px;max-width:560px;width:100%;padding:34px 26px;
     box-shadow:0 16px 44px rgba(251,140,0,.18);text-align:center;}
-  .check{width:88px;height:88px;border-radius:50%;background:radial-gradient(var(--sun),var(--sun-deep));
-    display:flex;align-items:center;justify-content:center;margin:0 auto 20px;
+  .check{width:78px;height:78px;border-radius:50%;background:radial-gradient(var(--sun),var(--sun-deep));
+    display:flex;align-items:center;justify-content:center;margin:0 auto 16px;
     box-shadow:0 8px 20px rgba(251,140,0,.35);}
-  .check span{color:#fff;font-size:46px;font-weight:800;line-height:1;}
-  h1{font-size:27px;color:var(--ink);margin-bottom:12px;}
+  .check span{color:#fff;font-size:42px;font-weight:800;line-height:1;}
+  h1{font-size:25px;color:var(--ink);margin-bottom:10px;}
   h1 b{color:var(--sun-deep);}
-  .lead{font-size:17px;color:#555;margin-bottom:22px;max-width:470px;margin-left:auto;margin-right:auto;}
-  .phone-alert{background:#FFF3D6;border:2px solid var(--sun);border-radius:14px;padding:16px 18px;margin:0 auto 22px;max-width:470px;}
-  .phone-alert .big{font-size:18px;font-weight:800;color:var(--red);margin-bottom:6px;}
-  .phone-alert p{font-size:15px;color:#7a5a1f;}
-  .steps{text-align:left;background:var(--cream);border-radius:14px;padding:18px 18px 18px 16px;margin:0 auto 22px;max-width:470px;}
-  .steps h3{font-size:16px;color:var(--sun-deep);margin-bottom:12px;text-align:center;}
-  .step{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;font-size:15px;}
-  .step:last-child{margin-bottom:0;}
-  .num{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:var(--sun);color:#fff;
-    font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center;}
-  .gift{background:var(--soft);border:2px dashed var(--sun);border-radius:14px;padding:16px;margin:0 auto 22px;max-width:470px;}
-  .gift p{font-size:15px;color:#7a5a1f;margin-bottom:10px;}
+  .lead{font-size:16px;color:#555;margin-bottom:20px;max-width:470px;margin-left:auto;margin-right:auto;}
+
+  /* Hóa đơn */
+  .invoice{text-align:left;background:var(--cream);border-radius:14px;padding:16px 18px;margin:0 auto 18px;max-width:480px;}
+  .invoice h3{font-size:15px;color:var(--sun-deep);margin-bottom:10px;text-align:center;letter-spacing:.5px;}
+  .inv-row{display:flex;justify-content:space-between;gap:12px;font-size:14.5px;padding:6px 0;border-bottom:1px dashed #E6DcC4;}
+  .inv-row:last-child{border-bottom:none;}
+  .inv-row .k{color:#7a6a4f;flex-shrink:0;}
+  .inv-row .v{font-weight:600;text-align:right;word-break:break-word;}
+  .inv-total{background:var(--sun);border-radius:10px;padding:12px 14px;margin-top:10px;display:flex;justify-content:space-between;align-items:center;}
+  .inv-total .k{font-weight:700;}
+  .inv-total .v{font-weight:800;color:var(--red);font-size:22px;}
+
+  /* Thanh toán */
+  .pay{border:2px solid var(--sun);border-radius:16px;padding:18px 16px;margin:0 auto 20px;max-width:480px;background:#FFFDF7;}
+  .pay h2{font-size:18px;color:var(--red);margin-bottom:12px;}
+  .qr-img{width:216px;height:216px;object-fit:contain;border-radius:12px;background:#fff;border:1px solid #eee;margin:0 auto 12px;display:block;}
+  .bank{text-align:left;font-size:14.5px;max-width:340px;margin:0 auto;}
+  .bank .b-row{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-bottom:1px dashed #Eee;}
+  .bank .b-row .bk{color:#7a6a4f;}
+  .bank .b-row .bv{font-weight:700;text-align:right;word-break:break-word;}
+  .bank .note-info{margin-top:8px;font-size:13px;color:#B36A00;background:#FFF3D6;border-radius:8px;padding:8px 10px;text-align:center;}
+
+  .phone-alert{background:#FFF3D6;border:2px solid var(--sun);border-radius:14px;padding:15px 16px;margin:0 auto 20px;max-width:480px;}
+  .phone-alert .big{font-size:17px;font-weight:800;color:var(--red);margin-bottom:6px;}
+  .phone-alert p{font-size:14.5px;color:#7a5a1f;}
+
   .btn{display:block;width:100%;max-width:430px;margin:10px auto 0;text-decoration:none;
-    font-weight:800;font-size:16px;text-align:center;padding:15px 18px;border-radius:12px;}
+    font-weight:800;font-size:16px;text-align:center;padding:14px 18px;border-radius:12px;}
+  .btn-fanpage{background:#1877F2;color:#fff;box-shadow:0 6px 16px rgba(24,119,242,.3);}
   .btn-zalo{background:var(--sky);color:#fff;box-shadow:0 6px 16px rgba(2,119,189,.3);}
-  .btn-ebook{background:var(--green);color:#fff;box-shadow:0 6px 16px rgba(46,125,50,.3);}
   .btn-home{background:#fff;color:var(--ink);border:2px solid #E5DDC9;}
-  .note{font-size:13px;color:#999;margin-top:20px;}
-  @media(max-width:480px){ .card{padding:30px 18px;} h1{font-size:22px;} }
+  .note{font-size:12.5px;color:#999;margin-top:18px;}
+  @media(max-width:480px){ .card{padding:26px 16px;} h1{font-size:21px;} .qr-img{width:190px;height:190px;} }
 </style>
 </head>
 <body>
   <div class="card">
     <div class="check"><span>✓</span></div>
     <h1>Chị đã giữ được suất trải nghiệm <b>Love The Sun 149k</b> 💛</h1>
-    <p class="lead">Giang đã nhận được đăng ký của chị. Bên Giang sẽ gọi điện xác nhận và gửi hàng tới chị trong vài ngày tới.</p>
+    <p class="lead">Giang đã ghi nhận đơn của chị. Chị chuyển khoản <b>149.000đ</b> theo mã QR bên dưới để hoàn tất giữ suất nhé.</p>
 
+    <!-- HÓA ĐƠN -->
+    <div class="invoice">
+      <h3>🧾 HÓA ĐƠN SUẤT TRẢI NGHIỆM</h3>
+      <div class="inv-row"><span class="k">Sản phẩm</span><span class="v">Kem chống nắng Love The Sun SPF50+ (40ml)</span></div>
+      <div class="inv-row"><span class="k">Khách hàng</span><span class="v" id="iv-ten">—</span></div>
+      <div class="inv-row"><span class="k">Điện thoại</span><span class="v" id="iv-sdt">—</span></div>
+      <div class="inv-row"><span class="k">Địa chỉ nhận</span><span class="v" id="iv-dc">—</span></div>
+      <div class="inv-row"><span class="k">Cước vận chuyển</span><span class="v">Trả khi nhận hàng</span></div>
+      <div class="inv-total"><span class="k">Thanh toán ngay</span><span class="v">149.000đ</span></div>
+    </div>
+
+    <!-- THANH TOÁN QR -->
+    <div class="pay">
+      <h2>💳 Quét mã để chuyển khoản 149.000đ</h2>
+      <img class="qr-img" id="qr" src="" alt="Mã QR VietQR chuyển khoản 149.000đ tới Vikora Group">
+      <div class="bank">
+        <div class="b-row"><span class="bk">Ngân hàng</span><span class="bv">Vietcombank</span></div>
+        <div class="b-row"><span class="bk">Số tài khoản</span><span class="bv">1060285555</span></div>
+        <div class="b-row"><span class="bk">Chủ tài khoản</span><span class="bv">CÔNG TY TNHH VIKORA GROUP</span></div>
+        <div class="b-row"><span class="bk">Số tiền</span><span class="bv">149.000đ</span></div>
+        <div class="b-row"><span class="bk">Nội dung CK</span><span class="bv" id="ck-noidung">—</span></div>
+        <div class="note-info">Chị giữ đúng <b>nội dung chuyển khoản</b> ở trên để Giang đối soát và xác nhận đơn nhanh nhất nhé.</div>
+      </div>
+    </div>
+
+    <!-- NHẮC ĐIỆN THOẠI -->
     <div class="phone-alert">
       <div class="big">📞 Chị để ý điện thoại giúp Giang nhé!</div>
-      <p>Bên Giang sẽ gọi từ số lạ để xác nhận đơn và địa chỉ trong 1 đến 2 ngày tới. Chị nhớ nghe máy để không lỡ mất suất trải nghiệm nha.</p>
+      <p>Sau khi chị chuyển khoản, bên Giang sẽ gọi từ số lạ để xác nhận và giao hàng trong <b>vài ngày tới</b>. Chị nhớ nghe máy để không lỡ mất suất trải nghiệm nha.</p>
     </div>
 
-    <div class="steps">
-      <h3>Các bước tiếp theo</h3>
-      <div class="step"><div class="num">1</div><div>Bên Giang <b>gọi điện xác nhận</b> đơn và địa chỉ của chị.</div></div>
-      <div class="step"><div class="num">2</div><div>Đóng gói và <b>giao hàng tận nơi</b> trong vài ngày tới.</div></div>
-      <div class="step"><div class="num">3</div><div>Chị nhận hàng, <b>thanh toán 149.000đ tiền sản phẩm và cước ship</b> cho shipper.</div></div>
-    </div>
-
-    <div class="gift">
-      <p>🎁 Trong lúc chờ hàng, chị nhận ngay <b>Ebook làm đẹp da của Giang</b> để chăm da đúng cách nhé.</p>
-      <a class="btn btn-ebook" href="https://lethugiang.com/ebook">Nhận Ebook miễn phí</a>
-    </div>
-
-    <a class="btn btn-zalo" href="https://zalo.me/4583815288539178560">Nhắn Giang qua Zalo nếu cần hỗ trợ</a>
+    <a class="btn btn-fanpage" href="https://www.facebook.com/ba12days.official" target="_blank" rel="noopener">Ghé fanpage BA12DAYS xem thêm</a>
+    <a class="btn btn-zalo" href="https://zalo.me/4583815288539178560" target="_blank" rel="noopener">Nhắn Giang qua Zalo nếu cần hỗ trợ</a>
     <a class="btn btn-home" href="index.html">Quay lại trang Love The Sun</a>
 
     <p class="note">Love The Sun là sản phẩm mỹ phẩm chăm sóc da, không phải là thuốc. Hiệu quả tùy cơ địa mỗi người.</p>
   </div>
+
+<script>
+(function(){
+  var p=new URLSearchParams(location.search);
+  function esc(s){return (s||'').replace(/[<>]/g,'');}
+  var ten=esc(p.get('ten')), sdt=esc(p.get('sdt')), dc=esc(p.get('dc'));
+  if(ten) document.getElementById('iv-ten').textContent=ten;
+  if(sdt) document.getElementById('iv-sdt').textContent=sdt;
+  if(dc)  document.getElementById('iv-dc').textContent=dc;
+
+  /* Nội dung chuyển khoản: LTS149 + SĐT (để đối soát) */
+  var noidung='LTS149 '+(sdt||'');
+  document.getElementById('ck-noidung').textContent=noidung.trim();
+
+  /* VietQR: Vietcombank (BIN 970436) - 1060285555, template compact2, số tiền 149000 */
+  var qr='https://img.vietqr.io/image/970436-1060285555-compact2.png'
+        +'?amount=149000'
+        +'&addInfo='+encodeURIComponent(noidung.trim())
+        +'&accountName='+encodeURIComponent('CONG TY TNHH VIKORA GROUP');
+  document.getElementById('qr').src=qr;
+})();
+</script>
 </body>
 </html>
